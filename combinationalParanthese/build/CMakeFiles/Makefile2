@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = "C:\Users\Maher\Desktop\Nader Hany\CoderByte\combinationalPar
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/bin.dir/all
+all: CMakeFiles/binn.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/bin.dir/clean
+clean: CMakeFiles/binn.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/bin.dir
+# Target rules for target CMakeFiles/binn.dir
 
 # All Build rule for target.
-CMakeFiles/bin.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bin.dir\build.make CMakeFiles/bin.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bin.dir\build.make CMakeFiles/bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Maher\Desktop\Nader Hany\CoderByte\combinationalParanthese\build\CMakeFiles" --progress-num=1,2 "Built target bin"
-.PHONY : CMakeFiles/bin.dir/all
+CMakeFiles/binn.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Maher\Desktop\Nader Hany\CoderByte\combinationalParanthese\build\CMakeFiles" --progress-num=1,2,3 "Built target binn"
+.PHONY : CMakeFiles/binn.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Maher\Desktop\Nader Hany\CoderByte\combinationalParanthese\build\CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/bin.dir/all
+CMakeFiles/binn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Maher\Desktop\Nader Hany\CoderByte\combinationalParanthese\build\CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/binn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Maher\Desktop\Nader Hany\CoderByte\combinationalParanthese\build\CMakeFiles" 0
-.PHONY : CMakeFiles/bin.dir/rule
+.PHONY : CMakeFiles/binn.dir/rule
 
 # Convenience name for target.
-bin: CMakeFiles/bin.dir/rule
-.PHONY : bin
+binn: CMakeFiles/binn.dir/rule
+.PHONY : binn
 
 # clean rule for target.
-CMakeFiles/bin.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bin.dir\build.make CMakeFiles/bin.dir/clean
-.PHONY : CMakeFiles/bin.dir/clean
+CMakeFiles/binn.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/clean
+.PHONY : CMakeFiles/binn.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

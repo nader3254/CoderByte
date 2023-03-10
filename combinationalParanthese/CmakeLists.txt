@@ -1,4 +1,4 @@
 cmake_minimum_required(VERSION 3.22)
 project(COMB)
-add_executable(bin src/main.cpp )
-target_include_directories(bin PUBLIC inc/)
+add_executable(binn main.cpp src/task1.cpp)
+target_include_directories(binn PUBLIC inc/)

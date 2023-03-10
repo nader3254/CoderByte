@@ -116,41 +116,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named bin
+# Target rules for targets named binn
 
 # Build rule for target.
-bin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 bin
-.PHONY : bin
+binn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 binn
+.PHONY : binn
 
 # fast build rule for target.
-bin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bin.dir\build.make CMakeFiles/bin.dir/build
-.PHONY : bin/fast
+binn/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/build
+.PHONY : binn/fast
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+main.obj: main.cpp.obj
+.PHONY : main.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bin.dir\build.make CMakeFiles/bin.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bin.dir\build.make CMakeFiles/bin.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bin.dir\build.make CMakeFiles/bin.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/task1.obj: src/task1.cpp.obj
+.PHONY : src/task1.obj
+
+# target to build an object file
+src/task1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/src/task1.cpp.obj
+.PHONY : src/task1.cpp.obj
+
+src/task1.i: src/task1.cpp.i
+.PHONY : src/task1.i
+
+# target to preprocess a source file
+src/task1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/src/task1.cpp.i
+.PHONY : src/task1.cpp.i
+
+src/task1.s: src/task1.cpp.s
+.PHONY : src/task1.s
+
+# target to generate assembly for a file
+src/task1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binn.dir\build.make CMakeFiles/binn.dir/src/task1.cpp.s
+.PHONY : src/task1.cpp.s
 
 # Help Target
 help:
@@ -160,10 +184,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... bin
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... binn
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... src/task1.obj
+	@echo ... src/task1.i
+	@echo ... src/task1.s
 .PHONY : help
 
 

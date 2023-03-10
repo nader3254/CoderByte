@@ -1,4 +1,4 @@
-#include "main.h"
+#include "task1.h"
 
 void generateParenthesis(int left, int right, string& s,vector<string>& answer)
 {
@@ -37,10 +37,3 @@ int BracketCombinations(int num) {
 
 }
 
-int main(void) { 
-   
-  int n = 3;
-  cout << BracketCombinations(3);
-  return 0;
-    
-}
