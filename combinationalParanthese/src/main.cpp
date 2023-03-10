@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <bits/stdc++.h>
-using namespace std;
+#include "main.h"
 
 void generateParenthesis(int left, int right, string& s,vector<string>& answer)
 {
@@ -43,7 +40,7 @@ int BracketCombinations(int num) {
 int main(void) { 
    
   int n = 3;
-  cout << BracketCombinations(coderbyteInternalStdinFunction(stdin));
+  cout << BracketCombinations(3);
   return 0;
     
 }
